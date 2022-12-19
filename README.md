@@ -1,2 +1,2 @@
-# pulumi-eks-cilium
+# EKS with Cilium
 Operationalizing EKS with Cilium
