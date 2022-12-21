@@ -28,11 +28,6 @@ karpenter_default_nodegroup_role_policy_arns = [
     "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
 ]
 
-# Create a default Fargate execution role:
-default_fargate_pod_execution_role_policy = [
-    "arn:aws:iam::aws:policy/AmazonEKSFargatePodExecutionRolePolicy"
-]
-
 # Cilium CNI service account policies:
 cni_service_account_policy_arns = [
     "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy",
@@ -107,7 +102,7 @@ demo_eks_loggroup = cloudwatch.LogGroup("demo-eks-loggroup",
 Create an EKS control plane
 """
 
-# Create the cluster control plane and Fargate profiles:
+# Create the cluster control plane:
 demo_eks_cluster = eks_provider.Cluster(f"eks-{cluster_descriptor}",
     name=f"{cluster_descriptor}",
     vpc_id=demo_vpc.id,
