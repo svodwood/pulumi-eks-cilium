@@ -218,7 +218,15 @@ cilium_cni_release = Release("cilium-cni",
                     "algorithm": "maglev"
                 },
                 "kubeProxyReplacement": "strict",
-                "k8sServiceHost": args[1].replace("https://","")
+                "k8sServiceHost": args[1].replace("https://",""),
+                "hubble": {
+                    "relay": {
+                        "enabled": True,
+                    },
+                    "ui": {
+                        "enabled": True
+                    }
+                }
             }
         )
     ),
