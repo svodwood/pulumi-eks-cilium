@@ -9,7 +9,7 @@
 <h3 align="center">EKS Series Part 2. All That eBPF: Operationalizing EKS with Cilium, Karpenter and Flux</h3>
 
   <p align="center">
-    Flux Configuration Repository for Cilium EKS Demo
+    Pulumi Infrastructure as Code
     <br />
     <br />
     <a href="https://github.com/svodwood/pulumi-eks-cilium/issues">Report Bug</a>
